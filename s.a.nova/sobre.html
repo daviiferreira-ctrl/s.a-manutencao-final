@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a VetKet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+<!-- =========================
+     MENU
+========================== -->
+
+<header>
+    <nav class="navbar">
+        <a href="base.html" class="logo">
+            <img src="img/logo.png" alt="Vetket">
+        </a>
+        <ul class="menu">
+            <li><a href="agendamento.php">Agendamento</a></li>
+            <li><a href="listar.php">Consultas</a></li>
+            <li><a href="adocao.php">Adotar</a></li>
+            <li class="pagina-atual"><a href="sobre.html">Sobre</a></li>
+            <li><a href="login.php">Sair</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="sobre-container">
+
+    <!-- =========================
+         SOBRE A VETKET
+    ========================== -->
+
+    <section class="sobre-texto">
+
+        <h1>Sobre a VetKet</h1>
+
+        <p>
+            A VetKet é uma clínica veterinária dedicada ao cuidado de animais domésticos. 
+            Oferecemos consultas, exames, vacinas e atendimento de qualidade para garantir
+            a saúde e o bem-estar dos pets. Nosso objetivo é proporcionar um ambiente acolhedor, 
+            seguro e preparado para cuidar de cada pet com carinho e atenção.</p>
+
+    </section>
+
+    <!-- =========================
+         AMBIENTE
+    ========================== -->
+
+    <section class="ambiente-secao">
+
+        <h2>Nosso Ambiente</h2>
+
+        <p class="secao-descricao">
+            Conheça um pouco do espaço preparado para receber nossos pacientes.
+        </p>
+
+        <div class="carrossel-wrapper">
+
+            <input type="radio" name="grupo-slide" id="img1" checked>
+            <input type="radio" name="grupo-slide" id="img2">
+            <input type="radio" name="grupo-slide" id="img3">
+
+            <div class="carrossel-imagens">
+
+                <div class="slide-item item-1">
+                    <img src="img/sala_de_recpecao.png" alt="Sala da VetKet">
+                </div>
+
+                <div class="slide-item item-2">
+                    <img src="img/sala_de_adocao.png" alt="Sala de atendimento">
+                </div>
+
+                <div class="slide-item item-3">
+                    <img src="img/sala_de_atendimento.png" alt="Ambiente da clínica">
+                </div>
+            </div>
+            <div class="carrossel-navegacao">
+                <label for="img1" class="barra-clique"></label>
+                <label for="img2" class="barra-clique"></label>
+                <label for="img3" class="barra-clique"></label>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         EQUIPE
+    ========================== -->
+
+    <section class="equipe-secao">
+
+        <h2>Nossa Equipe</h2>
+
+        <p class="secao-descricao">Profissionais preparados para cuidar dos seus pets.</p>
+
+        <div class="equipe-grid">
+
+            <div class="equipe-card" onclick="window.location.href='sarah.html'">
+                <div class="avatar-wrapper">
+                    <img src="img/sarah.png" alt="Dra. Maia">
+                </div>
+                <h3>Dra. Maia</h3>
+                <p>Veterinária</p>
+            </div>
+
+            <div class="equipe-card" onclick="window.location.href='adry.html'">
+                <div class="avatar-wrapper">
+                    <img src="img/adry.png" alt="Dra. Laurindo">
+                </div>
+                <h3>Dra. Laurindo</h3>
+                <p>Veterinária</p>
+            </div>
+
+            <div class="equipe-card" onclick="window.location.href='davi.html'">
+                <div class="avatar-wrapper">
+                    <img src="img/davi.png" alt="Dr. Ferreira">
+                </div>
+                <h3>Dr. Ferreira</h3>
+                <p>Veterinário</p>
+            </div>
+
+            <div class="equipe-card" onclick="window.location.href='bia.html'">
+                <div class="avatar-wrapper">
+                    <img src="img/bianca.png" alt="Dra. Alves">
+                </div>
+                <h3>Dra. Alves</h3>
+                <p>Veterinária</p>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

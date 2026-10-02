@@ -1,0 +1,3002 @@
+/* 
+   CONFIGURAÇÃO GERAL
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #245548;
+
+    background:
+        radial-gradient(circle at 8% 35%, rgba(126, 174, 162, 0.10) 0 45px, transparent 47px),
+        radial-gradient(circle at 92% 65%, rgba(126, 174, 162, 0.10) 0 55px, transparent 57px),
+        #f7faf8;
+}
+
+
+/* ==================================================
+   ESTRUTURA
+================================================== */
+
+.wrapper {
+    min-height: calc(100vh - 170px);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    width: 100%;
+    height: 78px;
+
+    background: linear-gradient(
+        90deg,
+        #295342,
+        #668f82,
+        #bbe0d8
+    );
+
+    box-shadow: 0 3px 12px rgba(41, 83, 66, 0.15);
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================
+   BARRA DE NAVEGAÇÃO
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 78px;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+header {
+    width: 100%;
+    height: 68px;
+
+    background: linear-gradient(
+        90deg,
+        #295342,
+        #668f82,
+        #bbe0d8
+    );
+
+    box-shadow: 0 2px 8px rgba(41, 83, 66, 0.15);
+}
+
+.navbar {
+    width: 100%;
+    height: 68px;
+
+    padding: 0 28px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    position: relative;
+
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    padding: 25px 0 20px;
+}
+
+/* LINHA EMBAIXO DO ITEM */
+
+.menu li a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 12px;
+
+    width: 0;
+    height: 3px;
+
+    background: #dff3ed;
+
+    border-radius: 5px;
+
+    transition: width 0.25s ease;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+/* ==================================================
+   LOGO
+================================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+    display: block;
+
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.18);
+
+    transition: 0.25s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.06);
+}
+
+
+/* ==================================================
+   MENU DE NAVEGAÇÃO
+================================================== */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 31px;
+
+    list-style: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    position: relative;
+
+    display: block;
+
+    padding: 9px 0;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+
+/* linha embaixo */
+
+.menu li a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 1px;
+
+    width: 0;
+    height: 2px;
+
+    background: #d9eee9;
+
+    border-radius: 5px;
+
+    transform: translateX(-50%);
+
+    transition: 0.25s ease;
+}
+
+.menu li a:hover {
+    color: #e9f7f4;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+
+/* ==================================================
+   ÁREA CENTRAL
+================================================== */
+
+.content {
+    position: relative;
+
+    min-height: 570px;
+
+    padding: 42px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   CÍRCULOS DAS PATINHAS
+========================= */
+
+.patinha {
+    position: fixed;
+    width: 115px;
+    height: 115px;
+
+    /* círculo mais destacado */
+    background: #c8e8df;
+    border: 4px solid #5f9f8e;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* pata mais visível */
+    font-size: 62px;
+    color: #295342;
+
+    /* destaque ao redor do círculo */
+    box-shadow:
+        0 0 0 7px rgba(95, 159, 142, 0.18),
+        0 8px 20px rgba(41, 83, 66, 0.25);
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* pata da esquerda */
+.patinha-esquerda {
+    left: 5%;
+    top: 42%;
+    transform: rotate(-15deg);
+}
+
+/* pata da direita */
+.patinha-direita {
+    right: 5%;
+    bottom: 15%;
+    transform: rotate(15deg);
+}
+/* ==================================================
+   CARD DE BOAS-VINDAS
+================================================== */
+
+.welcome {
+    position: relative;
+    z-index: 2;
+
+    width: 650px;
+
+    padding: 29px 35px 34px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid #d6e6e1;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 28px rgba(36, 85, 72, 0.12);
+}
+
+
+/* detalhe superior do card */
+
+.welcome::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 90px;
+    height: 4px;
+
+    background: #78a99d;
+
+    border-radius: 0 0 10px 10px;
+
+    transform: translateX(-50%);
+}
+
+
+/* ==================================================
+   TÍTULO
+================================================== */
+
+.welcome h1 {
+    margin-bottom: 11px;
+
+    color: #245548;
+
+    font-size: 29px;
+    font-weight: 700;
+}
+
+
+/* ==================================================
+   TEXTO
+================================================== */
+
+.welcome > p {
+    max-width: 500px;
+
+    margin: 0 auto 24px;
+
+    color: #617870;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+}
+
+
+/* ==================================================
+   IMAGEM
+================================================== */
+
+.img {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img {
+    width: 365px;
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 17px;
+
+    border: 1px solid #e0e3dd;
+
+    box-shadow:
+        0 7px 18px rgba(36, 85, 72, 0.16);
+}
+
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+
+.footer-info {
+    position: relative;
+
+    width: 100%;
+
+    background: linear-gradient(
+        135deg,
+        #245548,
+        #326b5d
+    );
+
+    color: white;
+
+    border-top: 3px solid #a8d2c8;
+
+    overflow: hidden;
+}
+
+
+/* patinha do rodapé */
+
+.footer-info::after {
+    content: "🐾";
+
+    position: absolute;
+
+    right: 7%;
+    top: 18px;
+
+    font-size: 60px;
+
+    opacity: 0.07;
+
+    transform: rotate(15deg);
+}
+
+
+/* ==================================================
+   CONTEÚDO DO RODAPÉ
+================================================== */
+
+.footer-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 27px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ==================================================
+   COLUNAS
+================================================== */
+
+.footer-column {
+    width: 33.33%;
+
+    padding: 4px 25px;
+
+    text-align: center;
+}
+
+.footer-column + .footer-column {
+    border-left: 1px solid rgba(201, 231, 224, 0.30);
+}
+
+
+/* ==================================================
+   TÍTULOS DO RODAPÉ
+================================================== */
+
+.footer-column h4 {
+    margin-bottom: 8px;
+
+    color: #c8e6df;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* ==================================================
+   TEXTOS
+================================================== */
+
+.footer-column p {
+    color: #f1f7f5;
+
+    font-size: 12px;
+
+    line-height: 1.55;
+}
+
+.footer-column .highlight-text {
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   PARTE FINAL
+================================================== */
+
+.footer-bottom {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    padding: 10px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(201, 231, 224, 0.22);
+}
+
+.footer-bottom span {
+    color: #c3dad5;
+
+    font-size: 10px;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        padding: 0 22px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .welcome {
+        width: 620px;
+        max-width: 90%;
+    }
+}
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 650px) {
+
+    header {
+        height: auto;
+    }
+
+    .navbar {
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 20px;
+    }
+
+    .content {
+        min-height: auto;
+
+        padding: 30px 15px;
+    }
+
+    .welcome {
+        width: 100%;
+        max-width: 500px;
+
+        padding: 27px 18px 28px;
+    }
+
+    .welcome h1 {
+        font-size: 25px;
+    }
+
+    .welcome > p {
+        font-size: 13px;
+    }
+
+    .img img {
+        width: 100%;
+        max-width: 365px;
+
+        height: auto;
+
+        aspect-ratio: 365 / 300;
+    }
+
+    .footer-container {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 25px 15px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column + .footer-column {
+        border-left: none;
+
+        border-top: 1px solid rgba(201, 231, 224, 0.25);
+
+        padding-top: 20px;
+    }
+}
+ base html 
+
+/* =====================================================
+   AGENDAMENTO.PHP
+===================================================== */
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.container {
+    width: 100%;
+    min-height: calc(100vh - 78px);
+
+    padding: 42px 30px 70px;
+
+    position: relative;
+}
+
+/* =========================
+   PATINHAS
+========================= */
+
+.container::before {
+    content: "🐾";
+
+    position: absolute;
+
+    left: 8%;
+    top: 18%;
+
+    font-size: 48px;
+
+    opacity: 0.06;
+
+    transform: rotate(-20deg);
+}
+
+.container::after {
+    content: "🐾";
+
+    position: absolute;
+
+    right: 8%;
+    bottom: 18%;
+
+    font-size: 52px;
+
+    opacity: 0.06;
+
+    transform: rotate(20deg);
+}
+
+
+/* =========================
+   CARD DO AGENDAMENTO
+========================= */
+
+.agendamento-card {
+    width: 850px;
+    max-width: 95%;
+
+    background: white;
+
+    border: 1px solid #d7e6e0;
+
+    border-radius: 18px;
+
+    padding: 34px 42px;
+
+    box-shadow:
+        0 10px 30px rgba(41, 83, 66, 0.12);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* detalhe verde no topo */
+
+.agendamento-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 90px;
+    height: 5px;
+
+    background: #76a99c;
+
+    border-radius: 0 0 10px 10px;
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo-agendamento {
+    text-align: center;
+
+    margin-bottom: 27px;
+}
+
+.titulo-agendamento h2 {
+    color: #295342;
+
+    font-size: 27px;
+
+    margin-bottom: 9px;
+}
+
+.titulo-agendamento p {
+    color: #71837d;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.form-section {
+    margin-bottom: 25px;
+
+    padding: 20px;
+
+    background: #f8fbfa;
+
+    border: 1px solid #e0ebe7;
+
+    border-radius: 12px;
+}
+
+.form-section h3 {
+    color: #295342;
+
+    font-size: 15px;
+
+    margin-bottom: 17px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #dbe8e3;
+}
+
+
+/* =========================
+   LINHAS DO FORMULÁRIO
+========================= */
+
+.form-row {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin-bottom: 17px;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.form-group {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.form-group label {
+    color: #295342;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.vazio {
+    visibility: hidden;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="time"] {
+    width: 100%;
+
+    height: 42px;
+
+    padding: 10px 12px;
+
+    background: white;
+
+    border: 1px solid #cbded7;
+
+    border-radius: 8px;
+
+    color: #354e45;
+
+    font-size: 13px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #668f82;
+
+    box-shadow:
+        0 0 0 3px rgba(187, 224, 216, 0.45);
+}
+
+
+/* =========================
+   FOTO DO PET
+========================= */
+
+.foto-group {
+    margin-top: 3px;
+}
+
+.foto-group input[type="file"] {
+    width: 100%;
+
+    padding: 9px;
+
+    background: white;
+
+    border: 1px solid #cbded7;
+
+    border-radius: 8px;
+
+    color: #50655e;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview {
+    width: 170px;
+    height: 130px;
+
+    margin: 16px auto 0;
+
+    border: 2px dashed #cbded7;
+
+    border-radius: 12px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.preview span {
+    color: #91a49d;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   BOTÃO AGENDAR
+========================= */
+
+.btn-agendar {
+    display: block;
+
+    width: 190px;
+
+    margin: 25px auto 0;
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #295342;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-agendar:hover {
+    background: #668f82;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(41, 83, 66, 0.18);
+}
+
+/* =====================================================
+   AJUSTE FINAL DO AGENDAMENTO
+===================================================== */
+
+.container {
+    width: 100%;
+
+    min-height: calc(100vh - 78px);
+
+    padding: 55px 30px 70px;
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* =========================
+   CARD CENTRALIZADO
+========================= */
+
+.agendamento-card {
+    width: 850px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 34px 42px;
+
+    border: 1px solid #d7e6e0;
+
+    box-shadow:
+        0 10px 30px rgba(41, 83, 66, 0.12);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   MAIS ESPAÇO DO MENU
+========================= */
+
+header {
+    height: 78px;
+}
+
+.navbar {
+    height: 78px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* =========================
+   MENU BEM ALINHADO
+========================= */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    margin: 0;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo-agendamento {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.titulo-agendamento h2 {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.form-section {
+    width: 100%;
+
+    margin-bottom: 22px;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   ÚLTIMA SEÇÃO
+========================= */
+
+.form-section:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   NÃO MOSTRAR RODAPÉ
+   NO AGENDAMENTO
+========================= */
+
+body:has(.agendamento-card) .footer-info {
+    display: none;
+}
+/* =====================================================
+   LISTAR.PHP — CONSULTAS
+===================================================== */
+
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.consultas-container {
+    width: 100%;
+
+    min-height: calc(100vh - 78px);
+
+    padding: 55px 30px 70px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* =========================
+   PATINHAS
+========================= */
+
+.consultas-container::before {
+    content: "🐾";
+
+    position: absolute;
+
+    left: 8%;
+    top: 20%;
+
+    font-size: 48px;
+
+    opacity: 0.06;
+
+    transform: rotate(-20deg);
+}
+
+.consultas-container::after {
+    content: "🐾";
+
+    position: absolute;
+
+    right: 8%;
+    bottom: 18%;
+
+    font-size: 52px;
+
+    opacity: 0.06;
+
+    transform: rotate(20deg);
+}
+
+
+/* =========================
+   CARD DAS CONSULTAS
+========================= */
+
+.consultas-card {
+    width: 100%;
+
+    max-width: 1100px;
+
+    background: white;
+
+    border: 1px solid #d7e6e0;
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+    box-shadow:
+        0 10px 30px rgba(41, 83, 66, 0.12);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* detalhe superior */
+
+.consultas-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 90px;
+    height: 5px;
+
+    background: #76a99c;
+
+    border-radius: 0 0 10px 10px;
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.consultas-titulo {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.consultas-titulo h2 {
+    color: #295342;
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+.consultas-titulo p {
+    color: #71837d;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   TABELA
+========================= */
+
+.tabela-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #dce9e4;
+
+    border-radius: 12px;
+}
+
+.data-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   CABEÇALHO DA TABELA
+========================= */
+
+.data-table thead {
+    background: #295342;
+}
+
+.data-table th {
+    padding: 15px 14px;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   LINHAS
+========================= */
+
+.data-table tbody tr {
+    border-bottom: 1px solid #e1ece8;
+
+    transition: 0.2s;
+}
+
+.data-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+    background: #f5faf8;
+}
+
+
+/* =========================
+   CÉLULAS
+========================= */
+
+.data-table td {
+    padding: 13px 14px;
+
+    color: #405850;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+
+/* =========================
+   FOTO DO PET
+========================= */
+
+.pet-mini-container {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.pet-foto-renderizada {
+    width: 42px;
+
+    height: 42px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid #bbe0d8;
+
+    display: block;
+}
+
+.pet-foto-placeholder {
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #edf6f3;
+
+    border: 2px solid #bbe0d8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+/* =========================
+   MENSAGEM SEM CONSULTAS
+========================= */
+
+.sem-consultas {
+    padding: 35px !important;
+
+    color: #71837d !important;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 850px) {
+
+    .consultas-container {
+        padding: 45px 20px 60px;
+    }
+
+    .consultas-card {
+        padding: 25px 20px;
+    }
+
+    .data-table {
+        min-width: 750px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .consultas-container {
+        padding: 30px 15px 50px;
+    }
+
+    .consultas-card {
+        padding: 25px 15px;
+
+        border-radius: 15px;
+    }
+
+    .consultas-titulo h2 {
+        font-size: 23px;
+    }
+
+    .consultas-titulo p {
+        font-size: 12px;
+    }
+
+}
+/* =========================
+   ADOÇÃO
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7faf9;
+    color: #295342;
+}
+
+/* =========================
+   BARRA DO MENU
+========================= */
+
+header {
+    width: 100%;
+    height: 68px;
+    background: linear-gradient(90deg, #295342, #bbe0d8);
+    box-shadow: 0 2px 8px rgba(41, 83, 66, 0.15);
+}
+
+.navbar {
+    width: 100%;
+    height: 68px;
+    padding: 0 32px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* MENU */
+
+.menu {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    list-style: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    position: relative;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 24px 0 20px;
+}
+
+/* LINHA ABAIXO DO ITEM */
+
+.menu a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 12px;
+
+    width: 0;
+    height: 3px;
+
+    background: #dff3ed;
+    border-radius: 5px;
+
+    transition: width 0.25s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+.container {
+    width: 100%;
+    min-height: calc(100vh - 68px);
+
+    padding: 40px 30px 60px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.adocao-grid {
+    width: 100%;
+    max-width: 920px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+
+    align-items: start;
+}
+
+/* título ocupando a largura */
+
+.adocao-grid::before {
+    content: "Encontre seu novo companheiro";
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    color: #295342;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    margin-bottom: 2px;
+}
+
+/* =========================
+   CARD DO PET
+========================= */
+
+.pet-card {
+    width: 100%;
+
+    background: white;
+
+    border: 1px solid #d8e7e2;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 18px rgba(41, 83, 66, 0.10);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-4px);
+    
+    box-shadow: 0 10px 24px rgba(41, 83, 66, 0.16);
+}
+
+/* =========================
+   IMAGEM
+========================= */
+
+.pet-image {
+    width: 100%;
+    height: 180px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.pet-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ESPÉCIE */
+
+.pet-especie {
+    position: absolute;
+
+    left: 12px;
+    bottom: 10px;
+
+    padding: 5px 10px;
+
+    background: #295342;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.pet-info {
+    padding: 16px;
+}
+
+.pet-info h3 {
+    margin: 0 0 9px;
+
+    color: #295342;
+
+    font-size: 18px;
+}
+
+.pet-detalhes {
+    margin-bottom: 14px;
+}
+
+.pet-detalhes p {
+    margin: 6px 0;
+
+    color: #527067;
+
+    font-size: 12px;
+}
+
+.pet-detalhes strong {
+    color: #295342;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+    display: inline-block;
+
+    padding: 3px 8px;
+
+    background: #e0f1ec;
+    color: #295342;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+.btn-adotar {
+    display: block;
+
+    width: 100%;
+
+    padding: 10px 0;
+
+    box-sizing: border-box;
+
+    background: #295342;
+    color: white;
+
+    border-radius: 7px;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.btn-adotar:hover {
+    background: #3d705c;
+}
+
+/* =========================
+   PATINHAS
+========================= */
+
+.container::before {
+    content: "🐾";
+
+    position: fixed;
+
+    left: 7%;
+    top: 45%;
+
+    font-size: 42px;
+
+    opacity: 0.06;
+
+    transform: rotate(-20deg);
+}
+
+.container::after {
+    content: "🐾";
+
+    position: fixed;
+
+    right: 7%;
+    bottom: 18%;
+
+    font-size: 42px;
+
+    opacity: 0.06;
+
+    transform: rotate(20deg);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 850px) {
+
+    .adocao-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 650px;
+    }
+
+    .menu {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .adocao-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+    }
+
+    .container {
+        padding: 30px 15px;
+    }
+}
+/* =========================
+   PÁGINA SOBRE
+========================= */
+
+.sobre-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 45px 35px 70px;
+
+    position: relative;
+}
+
+
+/* =========================
+   BLOCO PRINCIPAL
+========================= */
+
+.sobre-texto {
+    max-width: 820px;
+
+    margin: 0 auto 55px;
+
+    padding: 38px 45px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid #d5e8e1;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(41, 83, 66, 0.10);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.sobre-texto h1 {
+    color: #295342;
+
+    font-size: 32px;
+
+    margin-bottom: 17px;
+}
+
+.sobre-texto p {
+    max-width: 700px;
+
+    margin: 0 auto 10px;
+
+    color: #60766e;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* pequena linha decorativa */
+
+.sobre-texto h1::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 4px;
+
+    margin: 12px auto 0;
+
+    background: #76a99c;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   TÍTULOS DAS SEÇÕES
+========================= */
+
+.ambiente-secao,
+.equipe-secao {
+    width: 100%;
+
+    margin-bottom: 65px;
+
+    text-align: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.ambiente-secao h2,
+.equipe-secao h2 {
+    color: #295342;
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+.secao-descricao {
+    color: #71857e;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CARROSSEL
+========================= */
+
+.carrossel-wrapper {
+    width: 100%;
+
+    max-width: 820px;
+
+    margin: 0 auto;
+
+    padding: 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #d5e8e1;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 28px rgba(41, 83, 66, 0.12);
+
+    overflow: hidden;
+}
+
+.carrossel-wrapper input {
+    display: none;
+}
+
+.carrossel-imagens {
+    width: 100%;
+
+    height: 390px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.slide-item {
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0;
+
+    transition: opacity 0.5s ease;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+#img1:checked ~ .carrossel-imagens .item-1 {
+    opacity: 1;
+}
+
+#img2:checked ~ .carrossel-imagens .item-2 {
+    opacity: 1;
+}
+
+#img3:checked ~ .carrossel-imagens .item-3 {
+    opacity: 1;
+}
+
+
+/* =========================
+   NAVEGAÇÃO CARROSSEL
+========================= */
+
+.carrossel-navegacao {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 16px 0 3px;
+}
+
+.barra-clique {
+    width: 42px;
+    height: 6px;
+
+    background: #c9dfd8;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.barra-clique:hover {
+    background: #5e9785;
+
+    transform: scaleY(1.3);
+}
+
+
+/* =========================
+   EQUIPE
+========================= */
+
+.equipe-grid {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.equipe-card {
+    padding: 25px 15px 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #d5e8e1;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 22px rgba(41, 83, 66, 0.08);
+
+    transition: 0.25s;
+}
+
+.equipe-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 14px 28px rgba(41, 83, 66, 0.15);
+}
+
+
+/* =========================
+   FOTOS DA EQUIPE
+========================= */
+
+.avatar-wrapper {
+    width: 115px;
+    height: 115px;
+
+    margin: 0 auto 16px;
+
+    padding: 5px;
+
+    background: #d9eee7;
+
+    border: 2px solid #94c5b5;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.equipe-card h3 {
+    color: #295342;
+
+    font-size: 16px;
+
+    margin-bottom: 6px;
+}
+
+.equipe-card p {
+    color: #719087;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   PATINHAS
+========================= */
+
+.patinha {
+    position: fixed;
+
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #d8f1e9;
+
+    border: 4px solid #a5d9ca;
+
+    border-radius: 50%;
+
+    font-size: 65px;
+
+    box-shadow:
+        0 0 0 8px rgba(165, 217, 202, 0.22),
+        0 10px 25px rgba(41, 83, 66, 0.15);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.patinha-esquerda {
+    left: 2.5%;
+
+    top: 42%;
+
+    transform: rotate(-12deg);
+}
+
+.patinha-direita {
+    right: 2.5%;
+
+    bottom: 18%;
+
+    transform: rotate(12deg);
+}
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 950px) {
+
+    .equipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 600px;
+    }
+
+    .patinha {
+        width: 100px;
+        height: 100px;
+
+        font-size: 52px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .sobre-container {
+        padding: 30px 15px 50px;
+    }
+
+    .sobre-texto {
+        padding: 28px 20px;
+    }
+
+    .sobre-texto h1 {
+        font-size: 26px;
+    }
+
+    .sobre-texto p {
+        font-size: 13px;
+    }
+
+    .carrossel-imagens {
+        height: 240px;
+    }
+
+    .equipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    .avatar-wrapper {
+        width: 85px;
+        height: 85px;
+    }
+
+    .patinha {
+        width: 75px;
+        height: 75px;
+
+        font-size: 38px;
+
+        border-width: 3px;
+    }
+
+    .patinha-esquerda {
+        left: 1%;
+    }
+
+    .patinha-direita {
+        right: 1%;
+    }
+}
+
+/* ==============================
+   LOGIN E CADASTRO - VETKET
+============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FUNDO */
+
+.login-body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #295342,
+        #bbe0d8
+    );
+}
+
+
+/* CAIXA */
+
+.login-container {
+    width: 100%;
+    max-width: 390px;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* TÍTULO */
+
+.login-container h2 {
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    color: #295342;
+
+    font-size: 26px;
+}
+
+.login-container h2::after {
+    content: "";
+
+    display: block;
+
+    width: 50px;
+    height: 4px;
+
+    margin: 10px auto 0;
+
+    border-radius: 10px;
+
+    background: #76a99c;
+}
+
+
+/* MENSAGEM DE ERRO */
+
+.mensagem-login {
+    padding: 10px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #a33a3a;
+
+    background: #fbe8e8;
+
+    border: 1px solid #e0aaaa;
+
+    border-radius: 8px;
+}
+
+
+/* MENSAGEM DE CADASTRO */
+
+.mensagem-cadastro {
+    padding: 10px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #295342;
+
+    background: #e2f3ec;
+
+    border: 1px solid #9fcbbb;
+
+    border-radius: 8px;
+}
+
+
+/* LABEL */
+
+.login-container label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #295342;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* INPUT */
+
+.login-container input {
+    width: 100%;
+    height: 45px;
+
+    padding: 0 13px;
+
+    margin-bottom: 17px;
+
+    border: 1px solid #cbdcd6;
+
+    border-radius: 8px;
+
+    background: #f8fbfa;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.login-container input:focus {
+    border-color: #5e9584;
+
+    background: white;
+
+    box-shadow: 0 0 0 3px rgba(118, 169, 156, 0.18);
+}
+
+
+/* BOTÃO */
+
+.login-container button {
+    width: 100%;
+    height: 45px;
+
+    margin-top: 3px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #295342;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-container button:hover {
+    background: #3d705c;
+
+    transform: translateY(-1px);
+}
+
+
+/* LINK DE CADASTRO / LOGIN */
+
+.conta {
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #71857e;
+
+    font-size: 13px;
+}
+
+.conta a {
+    margin-left: 4px;
+
+    color: #295342;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.conta a:hover {
+    color: #5e9584;
+
+    text-decoration: underline;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+    .login-container {
+        padding: 28px 22px;
+    }
+
+    .login-container h2 {
+        font-size: 23px;
+    }
+}
+
+
+/* PROCESSO DE ADOÇÃO */
+
+.processo-adocao {
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.texto-adocao {
+    text-align: center;
+    color: #71857e;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.processo-adocao label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #295342;
+    font-weight: bold;
+}
+
+.processo-adocao input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbdcd6;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.processo-adocao input:focus {
+    outline: none;
+    border-color: #5e9584;
+}
+
+.processo-adocao button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cancelar-adocao {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cancelar-adocao a {
+    color: #71857e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cancelar-adocao a:hover {
+    color: #295342;
+}
+
+/* DADOS DO PET */
+
+.dados-pet {
+    text-align: center;
+
+    margin-top: -10px;
+    margin-bottom: 25px;
+
+    color: #71857e;
+
+    font-size: 14px;
+}
+
+.dados-pet strong {
+    color: #295342;
+}
+
+
+/* PROCESSO DE ADOÇÃO */
+
+.processo-adocao {
+    max-width: 600px;
+
+    width: 100%;
+
+    margin: 30px auto;
+}
+
+.texto-adocao {
+    text-align: center;
+
+    color: #71857e;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+    line-height: 1.5;
+}
+
+.processo-adocao label {
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    color: #295342;
+
+    font-weight: bold;
+}
+
+.processo-adocao input {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #cbdcd6;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+.processo-adocao input:focus {
+    outline: none;
+
+    border-color: #5e9584;
+
+    box-shadow: 0 0 0 3px rgba(118, 169, 156, 0.15);
+}
+
+.processo-adocao button {
+    width: 100%;
+
+    margin-top: 20px;
+}
+
+.cancelar-adocao {
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.cancelar-adocao a {
+    color: #71857e;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.cancelar-adocao a:hover {
+    color: #295342;
+
+    text-decoration: underline;
+}
+
+
+
+
+/* =================================
+   PÁGINA DE ADOÇÃO
+================================= */
+
+.container {
+    display: block !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 30px 60px;
+    box-sizing: border-box;
+}
+
+
+/* TÍTULO */
+
+.titulo-adocao {
+    text-align: center;
+    color: #295342;
+    font-size: 30px;
+    margin: 0 0 8px;
+}
+
+.subtitulo-adocao {
+    text-align: center;
+    color: #71857e;
+    margin: 0 0 25px;
+}
+
+
+/* FILTROS */
+
+.filtros-adocao {
+    display: flex !important;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filtros-adocao button {
+    border: none;
+    background: #295342;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtros-adocao button:hover {
+    background: #3d705c;
+}
+
+
+/* =================================
+   CARDS DOS PETS
+================================= */
+
+.adocao-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* CARD */
+
+.pet-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #dce9e5;
+    box-shadow: 0 5px 15px rgba(41, 83, 66, 0.10);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* IMAGEM */
+
+.pet-image {
+    width: 100%;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ETIQUETA DA ESPÉCIE */
+
+.pet-especie {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    background: #295342;
+    color: white;
+
+    padding: 5px 11px;
+    border-radius: 15px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* INFORMAÇÕES */
+
+.pet-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.pet-info h3 {
+    margin: 0 0 8px;
+    color: #295342;
+    font-size: 20px;
+}
+
+.pet-detalhes {
+    margin-bottom: 15px;
+}
+
+.pet-detalhes p {
+    margin: 5px 0;
+    color: #4d625a;
+    font-size: 13px;
+}
+
+
+/* BADGE */
+
+.badge {
+    background: #e1efea;
+    color: #295342;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+
+/* BOTÃO */
+
+.btn-adotar {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #295342;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    padding: 10px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-top: auto;
+}
+
+.btn-adotar:hover {
+    background: #3d705c;
+}
+
+
+/* PET JÁ ADOTADO */
+
+.pet-adotado {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #dce9e5;
+    color: #295342;
+
+    text-align: center;
+
+    padding: 10px;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =================================
+   HISTÓRICO
+================================= */
+
+.historico-adocao {
+    display: block !important;
+    width: 100%;
+    margin: 55px 0 0;
+}
+
+.historico-adocao h2 {
+    text-align: center;
+    color: #295342;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.tabela-historico {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.historico-adocao table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(41, 83, 66, 0.10);
+}
+
+.historico-adocao th {
+    background: #295342;
+    color: white;
+    padding: 13px;
+}
+
+.historico-adocao td {
+    padding: 12px;
+    text-align: center;
+    color: #4d625a;
+    border-bottom: 1px solid #e1ece8;
+}
+
+.sem-adocoes {
+    text-align: center;
+    color: #71857e;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* =================================
+   RESPONSIVO
+================================= */
+
+@media (max-width: 900px) {
+
+    .adocao-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .adocao-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros-adocao {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        padding: 25px 15px;
+    }
+
+}
+
